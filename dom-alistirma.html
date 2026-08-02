@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+      <h1 id="baslik">Merhaba!</h1>
+      <input id="isimInput" placeholder="İsim gir">
+      <button id="buton">Selamla</button>
+  
+    <script>
+       let buton = document.querySelector("#buton");
+       let input = document.querySelector("#isimInput");
+       let baslik = document.querySelector("#baslik");
+
+       buton.addEventListener("click", () => {
+        let isim = input.value;
+        if(isim){
+            baslik.textContent = `Merhaba ${isim}!`;
+            baslik.style.color = "blue";
+        }else{
+            baslik.textContent = "Lütfen isim gir!";
+            baslik.style.color = "red";
+        }
+       });
+
+    </script>
+
+</body>
+</html>
