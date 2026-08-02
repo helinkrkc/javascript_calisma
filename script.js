@@ -1,4 +1,4 @@
-const API_KEY = "2c97b628e9ac1e0b7439d5b126455aa8";
+const API_KEY = "YOUR_API_KEY";
 const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 let buton = document.querySelector("#aramaButon");
